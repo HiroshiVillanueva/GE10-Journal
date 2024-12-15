@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Ge10 Journal</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="CSS/98.css">
+    <link rel="stylesheet" href="CSS/Spec_Styles.css">
+
+  </head>
+
+  <body class="desktop_Background">
+
+    <div class="window" id="Taskbar">
+        <div id="Left-Taskbar">
+            <button id="start_Button">
+                <img src="Images/W98 Logo.png" alt="">
+                <b>Start</b>
+            </button>
+            <div id="Divider-Taskbar"></div>
+        </div>
+
+        <div id="Center-Taskbar">
+            <button onclick="hide(3)" id="taslbar">
+                <img src="Images/W98 File Icon.png" alt="">
+                <p>GE 10 Journal Files</p>  
+            </button>
+        </div>
+
+        <div id="Right-Taskbar">
+            <div id="Divider-Taskbar"></div>
+            <div class="window" id="RT_Clump">    
+                <img style="margin-left: 0.3em;" src="/Images/icons/winamp2-16x16.png" alt="Internet" id="Net">
+                <img src="/Images/icons/audio-nope-16x16.png" alt="Audio" id="Audio">
+                <p id="currentTime"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="desktop">
+        <div onclick="hide(1)" id="ge10" style="margin-left: 50em; margin-top: 25em;">
+            <img src="Images/W98 File Icon.png" alt="">
+            <p>GE 10 Journal Files</p>
+        </div>
+    </div> 
+
+    <div class="window winone" id="About_Me" style=" height: 500px; width: 800px; position: absolute; z-index: 5;">
+          <div class="title-bar" id="About_Meheader">
+              <div class="title-bar-text" style="align-items: center; display: flex;">
+                <img style="margin: 0 0.3em 0 0.1em;" src="Images/icons/folder-open-16x16.png" alt="">GE10 Journal Files
+              </div>
+      
+              <div class="title-bar-controls">
+                <button onclick="hide(2)" aria-label="Minimize"></button>
+                <button onclick="resize()" aria-label="Maximize"></button>
+                <button onclick="hide(4)" aria-label="Close"></button>
+              </div>
+            </div>
+
+
+
+
+            <div class="window-body" id="bodiess">
+                <div id="headerss">
+                    <section id="corgy">
+                        <p><u>F</u>ile</p>
+                        <p><u>E</u>dit</p>
+                        <p><u>V</u>iew</p>
+                        <p><u>T</u>ools</p>
+                        <p><u>H</u>elp</p>
+                    </section>
+                    <section class="righty">
+                        <button onclick="openFile(7)">Return</button>
+                    </section>
+                </div>
+                <div class="window" id="bodyyyy">
+                    <section id="section1">
+                        <h3 id="fileTitle" style="margin: 0.3em 0em 0 0em;">GE10 JOURNAL</h3>
+                        <p id="fileText">
+                            Hello! and welcome to my GE10 Journal Website!!!
+                            I thought it would be really cool to do something creative
+                            so I decided to make my website look like a windows 98 desktop!
+                            <br><br>
+                            This is the where you will find all the files relating to all of
+                            my adventures and experiences through out the semester over on the
+                            left!
+                            <br><br>
+                            Oh! and dont worry about the top section! those "file", "edit", 
+                            and "view" tools are all for show! They dont actually work hehe,
+                            the 'return' button is the only one that really works, places you 
+                            back to the home page.
+                            <br><br>
+                            That's all I really have to say! please enjoy the website
+                            and have a great day!
+                        </p>
+                    </section>
+                    <section id="section2">
+
+                        <div class="desktop" id="homebase">
+                            <div onclick="openFile(1)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>About Me</p>
+                            </div>
+                            <div onclick="openFile(2)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Culture</p>
+                            </div>
+                            <div onclick="openFile(3)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Community</p>
+                            </div>
+                            <div onclick="openFile(4)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Classroom</p>
+                            </div>
+                            <div onclick="openFile(5)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Church</p>
+                            </div>
+                            <div onclick="openFile(6)">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Court</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="desktop" id="desk1"> <!-- About me Page -->
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>This is Me!</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Me with my hobby</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>My works</p>
+                            </div>
+                        </div>
+
+
+                        <div class="desktop" id="desk2">
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Open Dorms Tour</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>SU Genesis Bazaar</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Execonnect</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Casalubong 2024</p>
+                            </div>
+                        </div>
+
+
+                        <div class="desktop" id="desk3">
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Parada Preparation Week</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Jamming Session</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>3rd Breast Cancer Fun Run</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Sillimove Community Dance</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Sonic Bloom: Dance for a cause</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>DOST Silliman Beach Clean-up</p>
+                            </div>
+                        </div>
+
+
+                        <div class="desktop" id="desk4">
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Freshie Walk</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Dorm Orientation</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Balik Talent Lecture</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>ARTillery Philippines Workshop</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Mental Health Caravan</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Gender Sensitivity Training</p>
+                            </div>
+                        </div>
+
+
+                        <div class="desktop" id="desk5">
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>DLC Awarding Mass</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Hibalag Christian Night</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Open-Dorm Devotion</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Parade of Lights service</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Galilean Fellowship</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>Dorm Big-Brad Initiation Ceremony</p>
+                            </div>
+                        </div>
+
+
+                        <div class="desktop" id="desk6">
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>2nd SU Chess Championship</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Fitness Challenge</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>SU Swimming Competition</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>DOST Family Feud</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS ML semi-Finals</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS ML Finals</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>BlitzCpEP</p>
+                            </div>
+                            <div class="imagefiles">
+                                <img src="Images/icons/folder-48x48.png" alt="">
+                                <p>CCS Trivia Royale</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="section3">
+                    <section id="datatypes1">
+                        6 object(s)
+                    </section> 
+                    <section id="datatypes2">
+                        6.56MB
+                    </section>
+                    <section id="datatypes3">
+                        My Computer
+                    </section>
+                </div>
+            </div>
+      </div>
+
+    <script src="Javascript/Desktop.js"></script>'
+    <script src="Javascript/files.js"></script>
+  </body>
+</html>

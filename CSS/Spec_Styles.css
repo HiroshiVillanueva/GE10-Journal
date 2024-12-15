@@ -1,0 +1,315 @@
+
+.desktop_Background
+{
+/*    background-image: url(../Images/W98\ Backdrop.jpg) !important; */
+    background-color: #00807F;
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+    overflow: hidden;
+}
+
+#Taskbar
+{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 30px;
+
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+#Left-Taskbar
+{
+    display: flex;
+    gap: 0.5em;
+}
+#Right-Taskbar
+{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+#Center-Taskbar
+{
+    display: block;
+    flex-grow: 4;
+    gap: 0.5em;
+}
+
+
+
+#start_Button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0.3em;
+    gap: 0.5em;
+}
+#start_Button > img
+{
+    width: 2.5em;
+    height: auto;
+}
+#Divider-Taskbar
+{
+    width: 0.3px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.803);
+    
+}
+
+#Right-Taskbar img
+{
+    width: 1em;
+    height: 1.3em;
+}
+
+#currentTime
+{
+    margin: 0.3em 0.8em 0.3em 0;
+}
+
+#RT_Clump
+{
+    display: flex;
+    align-items: center;
+
+    margin: 0 0.5em 0 0;
+    gap: 0.8em;
+
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+
+
+#taslbar > img
+{
+
+    height: 2.5em;
+    width: auto;
+}
+#taslbar
+{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    opacity: 0;
+    gap: 1em;
+    width: 13.2em !important;
+    margin-left: 0.5em;
+    padding: 0 0 0 0.7em;
+
+    align-items: center;
+}
+
+
+
+
+.desktop
+{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    z-index: 2;
+    gap: 1.5em;
+}
+
+.desktop > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: auto;
+    gap: 0;
+}
+:hover .desktop > div{cursor: pointer;}
+
+#desk1, #desk2, #desk3, #desk4, #desk5, #desk6
+{
+    display: none;
+}
+
+
+
+.desktop > div > img
+{
+    width: 5.2em;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.imagefiles
+{
+    width: 10em !important;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.imagefiles > p
+{
+    text-align: center;
+}
+
+
+.desktop > div > p
+{
+    font-family: Pixelated MS Sans Serif;
+    margin  : 0 0 0 0;
+}
+
+
+.title-bar-text{
+    cursor: default !important;
+}
+
+
+
+/* CSS for the main window open */
+.winone 
+{
+    overflow: hidden;
+    resize: both;
+
+    top: 100px;
+    left: 100px;
+}
+#About_Me{display: none;}
+
+
+
+
+#ge10
+{
+    padding: 0.3em 3px 0.3em 3px;
+
+    border-style: dashed;
+    border-color: rgba(240, 248, 255, 0);
+    border-width: 0.1px;
+    background-color: rgba(179, 222, 245, 0); 
+}
+
+#ge10:hover
+{
+    border-style: dashed;
+    border-color: rgba(240, 248, 255, 0.201);
+    border-width: 0.1px;
+    background-color: rgba(179, 222, 245, 0.204);   
+}
+
+#headerss
+{
+    height: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bodiess
+{
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.2em;
+
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+
+    overflow-y: hidden;
+}
+
+#bodyyyy
+{
+    box-shadow: none;
+    margin: 0;
+    padding: 0 0.05em 0 0;
+    height: calc(100% - 5.9em);
+
+    display: flex;
+    gap: 0.1em;
+}
+
+
+#section1
+{
+    background-color: aliceblue;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+
+    overflow-wrap:anywhere;
+
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    overflow: auto;
+}
+#section2
+{
+    background-color: aliceblue;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+
+    width: 70%;
+
+    padding: 1em;
+    overflow-y: auto;
+    z-index: 60;
+}
+#section3
+{
+    height: 2em;
+    width: calc(100% - 6px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    z-index: 80;
+    display: flex;
+    padding: 3px;
+}
+#section3 > section{display: flex; align-items: center; padding: 5px;}
+#datatypes1
+{
+    flex-grow: 3;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+#datatypes2
+{
+    flex-grow: 1;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+#datatypes3
+{
+    flex-grow: 2;
+    box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
+}
+
+#corgy
+{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+
+    margin: 0.1em 0 0 1em;
+    padding: 0%;
+    cursor: default ;
+}
